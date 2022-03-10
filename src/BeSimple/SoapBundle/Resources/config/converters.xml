@@ -11,6 +11,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.converter.collection" class="%besimple.soap.converter.collection.class%" />
 
         <service id="besimple.soap.converter.date_time" class="%besimple.soap.converter.date_time.class%" public="false">

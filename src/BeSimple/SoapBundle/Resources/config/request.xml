@@ -8,6 +8,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.request_format.listener" class="%besimple.soap.request_format.listener.class%">
             <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" />
         </service>

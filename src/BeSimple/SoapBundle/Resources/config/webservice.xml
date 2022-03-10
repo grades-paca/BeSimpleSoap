@@ -19,6 +19,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.response" class="%besimple.soap.response.class%" />
 
         <service id="besimple.soap.response.listener" class="%besimple.soap.response.listener.class%">

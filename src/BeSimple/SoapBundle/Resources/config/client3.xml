@@ -9,6 +9,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.client.builder" class="%besimple.soap.client.builder.class%" abstract="true">
             <argument /> <!-- wsdl URI -->
             <argument type="collection">

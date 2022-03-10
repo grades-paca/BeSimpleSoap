@@ -9,6 +9,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.cache" class="%besimple.soap.cache.class%">
             <argument>%kernel.debug%</argument>
             <argument>%besimple.soap.cache.type%</argument>

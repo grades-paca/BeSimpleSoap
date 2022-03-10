@@ -14,6 +14,7 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
         <service id="besimple.soap.definition.loader.resolver" class="%besimple.soap.definition.loader.resolver.class%" public="false" />
 
         <service id="besimple.soap.definition.loader" class="%besimple.soap.definition.loader.class%">
