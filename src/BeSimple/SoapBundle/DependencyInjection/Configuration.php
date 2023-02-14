@@ -33,8 +33,8 @@ class Configuration
      */
     public function getConfigTree()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('be_simple_soap');
+        $treeBuilder = new TreeBuilder('be_simple_soap');
+        $rootNode = $treeBuilder->getRootNode();
 
         $this->addCacheSection($rootNode);
         $this->addClientSection($rootNode);
