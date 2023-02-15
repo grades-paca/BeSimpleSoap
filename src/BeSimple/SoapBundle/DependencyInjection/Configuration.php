@@ -12,7 +12,7 @@
 
 namespace BeSimple\SoapBundle\DependencyInjection;
 
-use BeSimple\SoapBundle\ServiceDefinition\Annotation\ConfigurationInterface;
+use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 
@@ -51,6 +51,10 @@ class Configuration implements ConfigurationInterface
         return $treeBuilder->buildTree();
     }
 
+    public function getConfigTreeBuilder(){
+        return$this->getConfigTree();
+    }
+    
     private function addCacheSection(ArrayNodeDefinition $rootNode)
     {
         $rootNode
