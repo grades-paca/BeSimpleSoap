@@ -12,6 +12,7 @@
 
 namespace BeSimple\SoapBundle\DependencyInjection;
 
+use BeSimple\SoapBundle\ServiceDefinition\Annotation\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 
@@ -21,7 +22,7 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
  * @author Christian Kerl <christian-kerl@web.de>
  * @author Francis Besset <francis.besset@gmail.com>
  */
-class Configuration
+class Configuration implements ConfigurationInterface
 {
     private $cacheTypes = array('none', 'disk', 'memory', 'disk_memory');
     private $proxyAuth = array('basic', 'ntlm');
