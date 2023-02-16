@@ -77,7 +77,7 @@ class SoapExceptionListener extends ErrorListener
         parent::onKernelException($event);
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return array(
             // Must be called before ExceptionListener of HttpKernel component
