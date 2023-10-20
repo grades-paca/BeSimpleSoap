@@ -20,13 +20,13 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^7.4 || ^8.2",
         "ext-soap": "*",
         "ext-curl": "*",
         "ass/xmlsecurity": "~1.0",
         "symfony/framework-bundle": "^5.0",
         "symfony/twig-bundle": "^5.0",
-        "laminas/laminas-mime": "2.12.*"
+        "laminas/laminas-mime": "2.10.*"
     },
     "replace": {
         "besimple/soap-bundle": "self.version",
